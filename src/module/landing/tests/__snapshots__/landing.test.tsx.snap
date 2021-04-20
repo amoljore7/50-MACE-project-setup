@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loads and displays landing page 1`] = `
+<DocumentFragment>
+  <main
+    class="MuiContainer-root MuiContainer-maxWidthXs"
+  >
+    <div
+      class="makeStyles-wrapperStyle-3"
+      data-testid="landingWrapper"
+    >
+      <h1
+        class="makeStyles-headingStyle-1"
+      >
+        HEALTHFUL
+      </h1>
+      <h3
+        class="makeStyles-headings-2"
+      >
+        You are accessing PHI
+      </h3>
+      <h5
+        class="makeStyles-headings-2"
+      >
+        By clicking ’Sign in’ you agree that you will only use protected health information 
+      </h5>
+      <h5
+        class="makeStyles-headings-2"
+      >
+        (PHI) to provide, coordinate or manage healthcare treatment for this patient
+      </h5>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-signIn-5"
+        style="background-color: rgb(68, 145, 224); color: rgb(255, 255, 255);"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Sign In
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </main>
+</DocumentFragment>
+`;

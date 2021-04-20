@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "FuturaMediumBT";
+    src: local("FuturaMediumBT"), url("./fonts/FuturaMediumBT.ttf") format("truetype");
+    font-weight: normal;
+}
+
+body,
+html {
+    margin: 0;
+    font-family: 'FuturaMediumBT';
+    background-color: #F5F5FA;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: 'FuturaMediumBT';
+}
+
+*root {
+    font-family: 'FuturaMediumBT';
+}
+
+:root {
+    font-family: 'FuturaMediumBT';
+}
+
+:root {
+    font-family: 'FuturaMediumBT';
+}

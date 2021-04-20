@@ -1,0 +1,80 @@
+export const SITES_AND_CATEGORIES = 'SITES_AND_CATEGORIES';
+export const SITES_AND_CATEGORIES_LOADING = 'SITES_AND_CATEGORIES_LOADING';
+export const SITES_AND_CATEGORIES_SUCCESS = 'SITES_AND_CATEGORIES_SUCCESS';
+export const SITES_AND_CATEGORIES_FAIL = 'SITES_AND_CATEGORIES_FAIL';
+export const ADDRESS_SUGGESTION = 'ADDRESS_SUGGESTION';
+export const ADDRESS_SUGGESTION_LOADING = 'ADDRESS_SUGGESTION_LOADING';
+export const ADDRESS_SUGGESTION_SUCCESS = 'ADDRESS_SUGGESTION_SUCCESS';
+export const ADDRESS_SUGGESTION_FAIL = 'ADDRESS_SUGGESTION_FAIL';
+export const NEAR_BY_RESOURCES = 'NEAR_BY_RESOURCES';
+export const NEAR_BY_RESOURCES_LOADING = 'NEAR_BY_RESOURCES_LOADING';
+export const NEAR_BY_RESOURCES_SUCCESS = 'NEAR_BY_RESOURCES_SUCCESS';
+export const NEAR_BY_RESOURCES_FAIL = 'NEAR_BY_RESOURCES_FAIL';
+export const DELETE_RESOURCE = 'DELETE_RESOURCE';
+export const DELETE_RESOURCE_SUCCESS = 'DELETE_RESOURCE_SUCCESS';
+export const DELETE_RESOURCE_FAIL = 'DELETE_RESOURCE_FAIL';
+export const SAVE_SITE_AND_RESOURCE_CATEGORY = 'SAVE_SITE_AND_RESOURCE_CATEGORY';
+
+export const INSURANCE_AND_DISTANCE = 'INSURANCE_AND_DISTANCE';
+export const INSURANCE_AND_DISTANCE_LOADING = 'INSURANCE_AND_DISTANCE_LOADING';
+export const INSURANCE_AND_DISTANCE_SUCCESS = 'INSURANCE_AND_DISTANCE_SUCCESS';
+export const INSURANCE_AND_DISTANCE_FAIL = 'INSURANCE_AND_DISTANCE_FAIL';
+
+export const SAVE_SEARCH_RESOURCES = 'SAVE_SEARCH_RESOURCES';
+export const SAVE_SEARCH_RESOURCES_LOADING = 'SAVE_SEARCH_RESOURCES_LOADING';
+export const SAVE_SEARCH_RESOURCES_SUCCESS = 'SAVE_SEARCH_RESOURCES_SUCCESS';
+export const SAVE_SEARCH_RESOURCES_FAIL = 'SAVE_SEARCH_RESOURCES_FAIL';
+
+export const GET_SAVED_SEARCHES = 'GET_SAVED_SEARCHES';
+export const GET_SAVED_SEARCHES_LOADING = 'GET_SAVED_SEARCHES_LOADING';
+export const GET_SAVED_SEARCHES_SUCCESS = 'GET_SAVED_SEARCHES_SUCCESS';
+export const GET_SAVED_SEARCHES_FAIL = 'GET_SAVED_SEARCHES_FAIL';
+
+export const UPDATE_SAVE_SEARCH = 'UPDATE_SAVE_SEARCH';
+export const UPDATE_SAVE_SEARCH_LOADING = 'UPDATE_SAVE_SEARCH_LOADING';
+export const UPDATE_SAVE_SEARCH_SUCCESS = 'UPDATE_SAVE_SEARCH_SUCCESS';
+export const UPDATE_SAVE_SEARCH_FAIL = 'UPDATE_SAVE_SEARCH_FAIL';
+
+export const DELETE_SAVED_SEARCH = 'DELETE_SAVED_SEARCH';
+export const DELETE_SAVED_SEARCH_SUCCESS = 'DELETE_SAVED_SEARCH_SUCCESS';
+export const DELETE_SAVED_SEARCH_FAIL = 'DELETE_SAVED_SEARCH_FAIL';
+
+export interface SitesAndCategoriesLoading {
+  type: typeof SITES_AND_CATEGORIES_LOADING;
+}
+
+export interface SitesAndCategoriesSuccess {
+  type: typeof SITES_AND_CATEGORIES_SUCCESS;
+  payload: SitesAndCategoriesSuccessPayloadType;
+}
+
+export type SitesAndCategoriesSuccessPayloadType = {
+  userName: string;
+  password: string;
+};
+
+export interface SitesAndCategoriesFail {
+  type: typeof SITES_AND_CATEGORIES_FAIL;
+  payload: string;
+}
+
+export interface InsuranceAndDistanceLoading {
+  type: typeof INSURANCE_AND_DISTANCE_LOADING;
+}
+
+export interface InsuranceAndDistanceSuccess {
+  type: typeof INSURANCE_AND_DISTANCE_SUCCESS;
+  payload: any;
+}
+export interface InsuranceAndDistanceFail {
+  type: typeof INSURANCE_AND_DISTANCE_FAIL;
+  payload: string;
+}
+
+export type SitesAndCategoriesDispatch =
+  | SitesAndCategoriesLoading
+  | SitesAndCategoriesSuccess
+  | SitesAndCategoriesFail
+  | InsuranceAndDistanceLoading
+  | InsuranceAndDistanceSuccess
+  | InsuranceAndDistanceFail;
